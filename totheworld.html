@@ -23,17 +23,30 @@
         </div>
     </div>
 
-    <section id="main">
+
+    <div class="phone-nav">
+        <div class="nav-logo">
+            <a href="portfolio.html">
+            <img src="IMG/arrow-small-left.svg" alt="logo">
+            </a>
+        </div>
+    </div>
+
+    <section id="world-main">
+        <div class="project-header">
         <div class="world-project-img">
             <img src="IMG/totheworldlogo.jpg" alt="">
         </div>
-
-        <div class="project-gallery">
             <div class="project-about">
             <h3>2023</h3>
             <h2>To The World</h2>
             <p>To the world is an indie project based around the design of Pitch Canker’s tarot cards called “The Troubled Tarot”. During this project I assisted in various illustrative graphics for the game including the pause menu. That carried a feeling of dread and fear from the main character.</p>
             </div>
+        </div>
+
+
+
+        <div class="project-gallery">
             
             
             <div class="meow-project-content">
@@ -53,11 +66,69 @@
                 <h3 style="text-align: left;">Sketching</h3>
                 <p style="text-align: left;">Experimenting different ideas and focal points firstly on paper before beginning digital drafts. Planning layout as to how buttons and other text will be displayed on the page. Making notes to reference in the final design. Finally communicating with the team over the favoured design to implement into the project</p>
                 
-                <h2 style="margin-top: 5vw;">Final Concept</h2>
-                <img src="IMG/totheworldfull.jpg" alt="">
+                
+            </div>
+                <h2 style="margin-top: 5vw; text-align: center;">Final Concept</h2>
+                <img src="IMG/totheworldfull.jpg" alt="" style="text-align: center; height: 50vw;">
+      
+    </section>
+
+    <section id="phone-main">
+
+            <div class="project-header">
+        <div class="world-project-img">
+            <img src="IMG/totheworldlogo.jpg" alt="">
+        </div>
+            <div class="project-about">
+            <h3>2023</h3>
+            <h2>To The World</h2>
+            <p>To the world is an indie project based around the design of Pitch Canker’s tarot cards called “The Troubled Tarot”. During this project I assisted in various illustrative graphics for the game including the pause menu. That carried a feeling of dread and fear from the main character.</p>
+            </div>
+        </div>
+
+
+
+        <div class="gallery">
+            <h2>Ideation</h2>
+                <div class="world-slideshow-container">
+
+            <div class="arrow">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
             </div>
 
-      
+            <div class="phone-img1">
+                <div class="mySlides fade">
+                <img src="IMG/IMG_3460.JPG">
+                </div>
+            </div>
+
+            <div class="phone-img2">
+                <div class="mySlides fade">
+                <img src="IMG/IMG_3461.JPG">
+                </div>
+
+            </div>
+
+            <div class="phone-img3">
+
+                <div class="mySlides fade">
+                <img src="IMG/IMG_3462.JPG">
+                </div>
+            </div>
+
+            <div class="arrow">
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+        </div>
+                        <h3 style="text-align: left;">Sketching</h3>
+                <p style="text-align: left;">Experimenting different ideas and focal points firstly on paper before beginning digital drafts. Planning layout as to how buttons and other text will be displayed on the page. Making notes to reference in the final design. Finally communicating with the team over the favoured design to implement into the project</p>
+                
+                <h2 style="margin-top: 5vw;">Final Concept</h2>
+                <img src="IMG/totheworldfull.jpg" alt="" style="height: 61vw;">
+
+
+
     </section>
 
 
@@ -85,6 +156,32 @@
         <p>Copyright © Vanessa Sedlezky</p>
        
     </div>
+
+     <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+</script>
 
 
 
