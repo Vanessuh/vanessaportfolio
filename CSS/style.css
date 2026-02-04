@@ -314,13 +314,7 @@ body{
    width: 30vw;
    height: auto;
 }
-/*
-.project-about{
-   position: absolute;
-   top: 25vw;
-   width: 70vw;
-}
-*/
+
 .project-content{
    margin: 5vw 0 5vw 0;
    display: flex;
@@ -347,13 +341,7 @@ body{
    width: 15vw;
    height: auto;
 }
-/*
-.project-about{
-   position: absolute;
-   top: 25vw;
-   width: 70vw;
-}
-*/
+
 .meow-project-content{
    margin-top: 15vw;
    text-align: center;
@@ -504,7 +492,7 @@ body{
  /* MAIN */
  /* PHONE SCREEN */
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
    h1{
       font-size: 5vw;
    }
@@ -768,7 +756,7 @@ body{
  }
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
    #phone-main{
       display: none;
    }
