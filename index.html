@@ -26,21 +26,41 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>  
             </ol>
-          
+
         </div>
+
+    </div>
+
+    <div class="phone-nav">
+                <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </div>
+        </div>
+
+        
+         <span style="font-size:40px;cursor:pointer;margin: 4vw;" onclick="openNav()">&#9776;</span>
+             
 
     </div>
 
     <section id="hero">
             <h1>Welcome To My Portfolio</h1>
-            <a href="portfolio.html"><button>View My Work</button></a>
+            <div class="hero-btn">
+
+            <a href="portfolio.html"><button>View My Work</button></a>    
+            </div>
+
         <div class="headerImage">
             <img src="IMG/logo.jpg" alt="">
         
         </div>
     </section>
 
-    <section id="main">
+    <section id="home-main">
 
         <div class="introduction">
             <h3>Ways to pass the time.</h3>
@@ -78,11 +98,75 @@
     </section>
 
 
+    <section id="phone-main">
+
+        <div class="phone-introduction">
+            <h3>Ways to pass the time.</h3>
+            <h2>My Personal Gallery</h2>
+            <p>These are personal projects and artworks created during my free time. Whether I gained inspiration from a hobby, a show, or a pinterest collage.</p>
+        </div>
+
+        <hr>
+
+        <div class="gallery">
+
+            <h2>The Tomato Collection 🍅</h2>
+
+                
+                <div class="slideshow-container">
+
+            <div class="arrow">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+            </div>
+
+            <div class="phone-img1">
+                <div class="mySlides fade">
+                <img src="IMG/art1.jpg">
+                <div class="text">
+                    <h2>Portrait Model</h2>
+                    <p>Character study modeling a sliced tomato.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="phone-img2">
+                <div class="mySlides fade">
+                <img src="IMG/art3.jpg">
+                <div class="text">
+                    <h2>The Tomato Vine</h2>
+                    <p>A simple tomato study. Created form with shadows, highlights, and colour.</p>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="phone-img3">
+
+                <div class="mySlides fade">
+                <img src="IMG/art2.jpg">
+                <div class="text">
+                    <h2>Tomato Closeup</h2>
+                    <p>Intense blush and makeup is always fun to emphasize.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="arrow">
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
     <div class="footer">
 
         <div class="footer-flex">
             <div class="footer-logo">
-                <a href="#header"><img src="img/website-logo.png" alt="logo"></a>
+                <a href="#header"><img src="IMG/website-logo.png" alt="logo"></a>
             </div>
 
             <div>
@@ -103,6 +187,38 @@
        
     </div>
 
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 
 </body>

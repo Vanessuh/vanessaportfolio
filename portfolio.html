@@ -31,6 +31,22 @@
 
     </div>
 
+      <div class="phone-nav">
+                <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </div>
+        </div>
+
+        
+            <span style="font-size:40px;cursor:pointer;margin: 4vw;" onclick="openNav()">&#9776;</span>
+             
+
+    </div>
+
     <section id="portfolio-hero">
             <h1>Portfolio</h1>
     </section>
@@ -135,6 +151,17 @@
         <p>Copyright © Vanessa Sedlezky</p>
        
     </div>
+
+    <script>
+
+        function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    </script>
 
 
 
