@@ -497,10 +497,10 @@ body{
       font-size: 5vw;
    }
    h2{
-      font-size: 3vw;
+      font-size: 4vw;
    }
-   p,a{
-      font-size: 1.5vw;
+   p,a,h3{
+      font-size: 2vw;
    }
 
    .nav{
@@ -512,6 +512,11 @@ body{
       top:10px;
   z-index: 10000;
       height: 0;
+   }
+
+   .phone-nav img{
+      width: 8vw;
+      height: auto;
    }
 
    .overlay {
@@ -556,7 +561,7 @@ body{
 
 #hero{
     width: auto;
-    height: 55.5vw;
+    height: 60vw;
     background-color: #C71F02;
    text-align: center;
    position: relative;
@@ -570,8 +575,8 @@ body{
 }
 
  #hero .hero-btn{
-   width: 15vw;
-   margin: 2vw auto;
+   width: 25vw;
+   margin: 4vw auto;
  }
 
  #hero button{
@@ -629,11 +634,12 @@ body{
 
    .gallery{
       margin-top: 6vw;
+      height: auto;
    }
 
    .slideshow-container{
       width: auto;
-      height: 65vw;
+      height: 90vw;
       margin: auto;
       text-align: center;
       display: flex;
@@ -641,10 +647,10 @@ body{
    }
 
    .slideshow-container img{
-      width: 35vw;
+      width: 50vw;
    }
    .text{
-      width: 35vw;
+      width: 50vw;
    }
 
    .arrow{
@@ -695,6 +701,10 @@ body{
 
  /* PORTFOLIO */
 
+ .filter{
+   width: 55vw;
+ }
+
  #portfolio-hero{
   box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
   height: 30vw;
@@ -719,8 +729,8 @@ body{
  }
 
 .portfolio-character div{
-    width: 20vw;
-    height: 20vw;
+    width: 32.45vw;
+    height: 32.45vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
     margin-bottom: 7vw;
