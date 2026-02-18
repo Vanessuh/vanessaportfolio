@@ -202,6 +202,7 @@ body{
 .portfolio-character{
    gap: 3vw;
     display: flex;
+    margin-bottom: 7vw;
 
  }
 
@@ -210,7 +211,6 @@ body{
     height: 20vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
-    margin-bottom: 7vw;
  }
 
  .portfolio-character div:hover{
@@ -225,7 +225,6 @@ body{
     border-radius: 8px;
  }
 
-
  .filter{
    position: sticky;
    z-index: 1000;
@@ -233,7 +232,7 @@ body{
    background-color: #b6b6b642;
    backdrop-filter: blur(8px) ;
    display: flex;
-   width: 40vw;
+   width: 44vw;
    height: auto;
    margin: auto;
    border-radius:24px;
@@ -241,7 +240,6 @@ body{
 
  .filter div{
    margin: auto;
-
  }
 
 .filter p{
@@ -259,9 +257,8 @@ body{
 }
 
 .project-header{
-   padding-top: 6vw;
    position: relative;
-   height: 40vw;
+   height: 35vw;
 }
 
 .coco-project-img{
@@ -489,6 +486,74 @@ body{
    width: 25vw;
 }
 
+/* ABOUT */
+#about-hero{
+   background-color: #d9d9d9b0;
+   position: relative;
+   height: 45vw;
+}
+
+#about-hero h1{
+   position: absolute;
+   left: 20vw;
+   bottom: 32vw;
+}
+
+.about-intro{
+   display: flex;
+   gap: 10vw;
+   position: absolute;
+   left: 20vw;
+   bottom: 8vw;
+}
+
+.about-intro div{
+   width: 25vw;
+   margin: auto 0 auto 0;
+}
+
+.about-intro img{
+   width: 30vw;
+   border-radius: 8px;
+}
+
+.about-gallery{
+   margin-top: 5vw;
+}
+
+ .about-collection{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 2vw;
+ }
+
+ .about-collection div{
+    width: 20vw;
+    height: 25vw;
+   background-color: #d9d9d9b0;
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .about-collection h3{
+   margin: 2vw 1vw 0 1vw;
+   color: #C71F02;
+ }
+
+ .about-collection p{
+   margin: 0 1vw 2vw 1vw;
+ }
+
+ .about-collection img{
+    width: 18vw;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 10vw;
+    left: 1vw;
+ }
+
  /* MAIN */
  /* PHONE SCREEN */
 
@@ -518,6 +583,69 @@ body{
       width: 8vw;
       height: auto;
    }
+
+#about-hero{
+   height: 60vw;
+}
+
+#about-hero h1{
+   top: 10vw;
+   left: 6vw;
+}
+
+.about-intro img{
+   width: 40vw;
+   border-radius: 8px;
+}
+
+
+.about-intro div{
+   width: 40vw;
+   margin: auto 0 auto 0;
+}
+
+.about-intro{
+   left: 6vw;
+   gap: 3vw;
+}
+
+.about-collection{
+   flex-direction: column;
+   align-items: center;
+   gap: 5vw;
+}
+
+ .about-collection div{
+    width: 40vw;
+    height: 50vw;
+   background-color: #d9d9d9b0;
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .about-collection h3{
+   margin: 2vw 1vw 0 1vw;
+   color: #C71F02;
+ }
+
+ .about-collection p{
+   margin: 0 1vw 2vw 1vw;
+ }
+
+ .about-collection img{
+    width: 38vw;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 15vw;
+    left: 1vw;
+ }
+
+.about-gallery{
+   text-align: center;
+}
+
 
    .overlay {
   height: 100%;
@@ -722,18 +850,22 @@ body{
     padding: 0;
  }
 
+ .project-header{
+   height: 40vw;
+}
+
 .portfolio-character{
    gap: 3vw;
-    display: flex;
-
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 7vw;
  }
 
 .portfolio-character div{
-    width: 32.45vw;
-    height: 32.45vw;
+    width: 32vw;
+    height: 32vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
-    margin-bottom: 7vw;
  }
 
  .portfolio-character div:hover{
@@ -744,7 +876,7 @@ body{
 
 .portfolio-character img{
     width: inherit;
-    height: inherit;
+    height: auto;
     border-radius: 8px;
  }
 
@@ -839,7 +971,6 @@ body{
     height: 20vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
-    margin-bottom: 7vw;
  }
 
  .portfolio-character div:hover{
@@ -850,7 +981,7 @@ body{
 
 .portfolio-character img{
     width: inherit;
-    height: inherit;
+    height: auto;
     border-radius: 8px;
  }
 
