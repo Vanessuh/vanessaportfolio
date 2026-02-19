@@ -554,6 +554,37 @@ body{
     left: 1vw;
  }
 
+ .about-slide{
+   position: relative;
+   text-align: center;
+   width: 40vw;
+   margin: 7vw auto;
+}
+
+.slide-butt :nth-child(2){
+   position: absolute;
+   right: 0;
+   bottom: 40%;
+   border: 0;
+   width: 5vw;
+   height: 5vw;
+   background-color: #00000070;
+   color: white;
+   font-size: 3vw;
+}
+
+.slide-butt :nth-child(1){
+   position: absolute;
+   left: 0;
+   bottom: 40%;
+   border: 0;
+   width: 5vw;
+   height: 5vw;
+   background-color: #00000070;
+   color: white;
+   font-size: 3vw;
+}
+
  /* MAIN */
  /* PHONE SCREEN */
 
