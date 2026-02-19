@@ -586,6 +586,8 @@ body{
    font-size: 3vw;
 }
 
+
+
  /* MAIN */
  /* PHONE SCREEN */
 
@@ -682,13 +684,14 @@ body{
 .about-slide{
    position: relative;
    margin-top: 8vw;
+   width: 60vw;
    text-align: center;
 }
 
 .slide-butt :nth-child(2){
    position: absolute;
    right: 0;
-   bottom: 40%;
+   bottom: 35%;
    border: 0;
    width: 10vw;
    height: 10vw;
@@ -700,7 +703,7 @@ body{
 .slide-butt :nth-child(1){
    position: absolute;
    left: 0;
-   bottom: 40%;
+   bottom: 35%;
    border: 0;
    width: 10vw;
    height: 10vw;

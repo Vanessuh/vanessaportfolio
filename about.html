@@ -17,6 +17,7 @@ Graphic design">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
+
 </head>
 
 <body>
@@ -97,14 +98,19 @@ Graphic design">
 
         <div class="about-slide">
             <h2>Pickles Gallery</h2>
-            <img class="mySlides" src="IMG/pickles1.jpg" style="width:100%">
-            <img class="mySlides" src="IMG/pickles2.jpg" style="width:100%">
-            <img class="mySlides" src="IMG/pickles3.jpg" style="width:100%">
+
+            <img class="slides2" src="IMG/pickles1.jpg" style="width:100%">
+            <img class="slides2" src="IMG/pickles2.jpg" style="width:100%">
+            <img class="slides2" src="IMG/pickles3.jpg" style="width:100%">
+
             <div class="slide-butt">
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <button class="w3-button w3-black w3-display-left" onclick="plusSlides2(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusSlides2(1)">&#10095;</button>
             </div>
         </div>
+
+
+
 
     </section>
 
@@ -200,6 +206,27 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides2");
+  if (n > slides.length) { slideIndex2 = 1 }
+  if (n < 1) { slideIndex2 = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex2 - 1].style.display = "block";
+}
+
+
+
 
 </script>
 
