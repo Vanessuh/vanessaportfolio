@@ -8,7 +8,7 @@ p,button,a{
        font-size: 1vw;
 }
 
-a{
+a,button{
    cursor: pointer;
 }
 
@@ -243,17 +243,20 @@ body{
  }
 
 .filter p{
-   color: rgb(67, 67, 67);
+   color: rgb(27, 27, 27);
 
 }
 
 .filter a:hover{
-   opacity: 60%;
-   transition: 300ms;
+.filter p{
+   color: rgb(255, 255, 255);
+ transition: 300ms;
+}
+  
 }
 
 #character, #motion, #logo{
-   scroll-margin-top: 7vw;
+   scroll-margin-top: 5vw;
 }
 
 .project-header{
@@ -288,7 +291,7 @@ body{
 }
 
 .coco-project-content img{
-   width: 50vw;
+   width: 60vw;
    height: auto;
 }
 
@@ -448,12 +451,12 @@ body{
 }
 
 .project-content div{
-   width: 25vw;
+   width: auto;
    margin: auto;
 }
 
 .project-content img{
-   width: 25vw;
+   width: 40vw;
 }
 
 .meow-gallery{
@@ -592,6 +595,10 @@ body{
  /* PHONE SCREEN */
 
 @media screen and (max-width: 800px) {
+   #character, #motion, #logo{
+   scroll-margin-top: 15vw;
+}
+
    h1{
       font-size: 6vw;
       line-height: 6vw;
@@ -615,6 +622,18 @@ body{
    }
 
    .phone-nav img{
+      width: 8vw;
+      height: auto;
+   }
+
+      .port-phone-nav{
+      position: absolute;
+      top:10px;
+  z-index: 10000;
+      height: 0;
+   }
+
+   .port-phone-nav img{
       width: 8vw;
       height: auto;
    }
@@ -896,7 +915,8 @@ body{
  /* PORTFOLIO */
 
  .filter{
-   width: 55vw;
+   width: 90vw;
+   top: 5vw;
  }
 
  #portfolio-hero{
@@ -917,7 +937,7 @@ body{
  }
 
  .project-header{
-   height: 40vw;
+   height: 65vw;
 }
 
 .portfolio-character{
@@ -962,6 +982,41 @@ body{
  .world-slideshow-container img{
    height: 40vw;
  }
+
+.meow-gallery{
+   flex-direction: column;
+}
+
+.meow-gallery div{
+   width: 50vw;
+}
+
+.meow-gallery2{
+   flex-direction: column;
+   gap: 5vw;
+}
+
+.meow-gallery2 div{
+   width: 50vw;
+}
+
+.meow-subcat{
+   flex-direction: column;
+}
+
+.meow-subcat div{
+   width: 50vw;
+}
+
+.meow-gallery4 div{
+   width: auto;
+   height: 50vw;
+}
+
+.meow-gallery4 img{
+   height: inherit;
+}
+
 }
 
 @media screen and (min-width: 801px) {
@@ -1050,13 +1105,9 @@ body{
     height: auto;
     border-radius: 8px;
  }
+ 
 
  }
-
-
-
-
-
 
   /* FOOTER */
 @media screen and (max-width: 800px) {
