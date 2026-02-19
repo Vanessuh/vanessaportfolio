@@ -559,13 +559,14 @@ body{
 
 @media screen and (max-width: 800px) {
    h1{
-      font-size: 5vw;
+      font-size: 6vw;
+      line-height: 6vw;
    }
    h2{
-      font-size: 4vw;
+      font-size: 5vw;
    }
    p,a,h3{
-      font-size: 2vw;
+      font-size: 3vw;
    }
 
    .nav{
@@ -585,28 +586,28 @@ body{
    }
 
 #about-hero{
-   height: 60vw;
+   height: 120vw;
 }
 
 #about-hero h1{
    top: 10vw;
-   left: 6vw;
+   left: 33vw;
 }
 
 .about-intro img{
-   width: 40vw;
+   width: 60vw;
    border-radius: 8px;
 }
 
 
 .about-intro div{
-   width: 40vw;
-   margin: auto 0 auto 0;
+   width: 60vw;
 }
 
 .about-intro{
-   left: 6vw;
-   gap: 3vw;
+   gap: 0;
+   flex-direction: column;
+   align-items: center;
 }
 
 .about-collection{
@@ -616,8 +617,8 @@ body{
 }
 
  .about-collection div{
-    width: 40vw;
-    height: 50vw;
+    width: 60vw;
+    height: 70vw;
    background-color: #d9d9d9b0;
    border-radius: 8px;
    overflow: hidden;
@@ -634,16 +635,46 @@ body{
  }
 
  .about-collection img{
-    width: 38vw;
+    width: 55vw;
     height: auto;
     border-radius: 8px;
     position: absolute;
-    top: 15vw;
-    left: 1vw;
+    top:20vw;
+    left: 2.5vw;
  }
 
 .about-gallery{
    text-align: center;
+}
+
+.about-slide{
+   position: relative;
+   margin-top: 8vw;
+   text-align: center;
+}
+
+.slide-butt :nth-child(2){
+   position: absolute;
+   right: 0;
+   bottom: 45%;
+   border: 0;
+   width: 10vw;
+   height: 10vw;
+   background-color: #00000070;
+   color: white;
+   font-size: 5vw;
+}
+
+.slide-butt :nth-child(1){
+   position: absolute;
+   left: 0;
+   bottom: 45%;
+   border: 0;
+   width: 10vw;
+   height: 10vw;
+   background-color: #00000070;
+   color: white;
+   font-size: 5vw;
 }
 
 
@@ -689,7 +720,7 @@ body{
 
 #hero{
     width: auto;
-    height: 60vw;
+    height: 70vw;
     background-color: #C71F02;
    text-align: center;
    position: relative;
@@ -703,8 +734,8 @@ body{
 }
 
  #hero .hero-btn{
-   width: 25vw;
-   margin: 4vw auto;
+   width: 45vw;
+   margin: 3vw auto;
  }
 
  #hero button{
