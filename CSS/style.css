@@ -684,17 +684,17 @@ body{
 .about-slide{
    position: relative;
    margin-top: 8vw;
-   width: 60vw;
+   width: 80vw;
    text-align: center;
 }
 
 .slide-butt :nth-child(2){
    position: absolute;
    right: 0;
-   bottom: 35%;
+   bottom: 40%;
    border: 0;
-   width: 10vw;
-   height: 10vw;
+   width: 12vw;
+   height: 12vw;
    background-color: #00000070;
    color: white;
    font-size: 5vw;
@@ -703,10 +703,10 @@ body{
 .slide-butt :nth-child(1){
    position: absolute;
    left: 0;
-   bottom: 35%;
+   bottom: 40%;
    border: 0;
-   width: 10vw;
-   height: 10vw;
+   width: 12vw;
+   height: 12vw;
    background-color: #00000070;
    color: white;
    font-size: 5vw;
