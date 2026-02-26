@@ -2,10 +2,17 @@ html{
    scroll-behavior: smooth;
 }
 
-p,button,a{
+button,a{
        font-family: 'Comfortaa';
        text-decoration: none;
        font-size: 1vw;
+}
+
+p{
+       font-family: 'Comfortaa';
+       text-decoration: none;
+       font-size: 0.75vw;
+       line-height: 1vw;
 }
 
 a,button{
@@ -41,6 +48,7 @@ body{
     background-color: #ffffff;
     top: 0;
     z-index: 1000;
+    position: sticky;
 }
 
 .nav-logo{
@@ -79,6 +87,56 @@ body{
  }
 
 .nav ol li a:hover{
+    color:#C71F02;
+ }
+
+ /* HOME NAV */
+
+ /* NAV */
+.home-nav{
+    height: 5vw;
+    background-color:#C71F02;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+
+.nav-logo{
+    float: left;
+    padding-left: 5vw;
+}
+
+.nav-logo img{
+    height: 5vw;
+    width: auto;
+
+}
+
+.nav-buttons{
+    float: right;
+    height: inherit;
+    width: auto;
+}
+
+.home-nav ol{
+    margin: 2.15vw;
+    padding: 0;
+}
+
+.home-nav ol li{
+    display: inline;
+    margin-right: 2.5vw;
+}
+
+.home-nav ol li a{
+/* We could change the actual text in the links if wanted */
+    transition: .3s all ease;
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+ }
+
+.home-nav ol li a:hover{
     color:#C71F02;
  }
 
@@ -228,7 +286,7 @@ body{
  .filter{
    position: sticky;
    z-index: 1000;
-   top: 30px;
+   top: 7vw;
    background-color: #b6b6b642;
    backdrop-filter: blur(8px) ;
    display: flex;
@@ -247,16 +305,17 @@ body{
 
 }
 
-.filter a:hover{
-.filter p{
-   color: rgb(255, 255, 255);
- transition: 300ms;
-}
-  
+.filter :hover{
+
+   p{
+      opacity: 50%;
+      transition: 300ms;
+   }
+
 }
 
 #character, #motion, #logo{
-   scroll-margin-top: 5vw;
+   scroll-margin-top: 10vw;
 }
 
 .project-header{
@@ -564,6 +623,61 @@ body{
    width: 40vw;
    margin: 7vw auto;
 }
+
+.about-skill{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 5vw;
+   text-align: justify;
+}
+
+.about-skill h2{
+   margin: 0;
+}
+
+.skill-flex{
+   display: flex;
+   flex-direction: column;
+   gap: 3vw;
+}
+
+.skill-header{
+   width: 20vw;
+}
+
+.skill-item{
+   display: flex;
+   flex-direction: row;
+   gap: 3vw;
+}
+
+.skill-item img{
+   width: 6vw;
+   height: 6vw;
+}
+
+.skill-txt{
+   display: flex;
+   flex-direction: column;
+   width: 20vw;
+}
+
+#contact{
+   background-color: #d9e3e980;
+   height: 30vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#contact form input{
+   width: 20vw;
+   height: 1.5vw;
+   border: 2px solid black;
+}
+
 
 .slide-butt :nth-child(2){
    position: absolute;
