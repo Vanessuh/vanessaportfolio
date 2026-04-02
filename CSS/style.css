@@ -95,7 +95,7 @@ body{
  /* NAV */
 .home-nav{
     height: 5vw;
-    background-color:#C71F02;
+    background-color:white;
     top: 0;
     z-index: 1000;
     position: sticky;
@@ -131,7 +131,7 @@ body{
 .home-nav ol li a{
 /* We could change the actual text in the links if wanted */
     transition: .3s all ease;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1vw;
  }
@@ -260,6 +260,7 @@ body{
 .portfolio-character{
    gap: 3vw;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 7vw;
 
  }
@@ -672,10 +673,22 @@ body{
    flex-direction: column;
 }
 
-#contact form input{
+#contact form input, #contact textarea{
    width: 20vw;
    height: 1.5vw;
-   border: 2px solid black;
+   border: 0px solid #C71F02;
+   border-radius: 8px;
+}
+
+#contact textarea{
+   min-width:20vw; 
+   min-height:3vw;
+   max-width: 20vw; 
+   max-height: 5vw;
+}
+
+#contact input[type="submit"]{
+   width: 5vw;
 }
 
 
@@ -703,6 +716,87 @@ body{
    font-size: 3vw;
 }
 
+#portfolio-proj{
+   margin: 5vw 15vw 5vw 15vw;
+}
+
+.portfolio-header{
+   padding-top: 5vw;
+   position: relative;
+}
+
+.portfolio-header img{
+   display: block;
+   margin: auto;
+   width: 25%;
+   height: 25%;
+}
+
+.portfolio-content{
+   margin-top: 10vw;
+}
+
+.content-gallery{
+   display: flex;
+   width: 100%;
+   
+}
+
+.content-gallery div{
+   width: 0;
+   flex-grow: 1;
+}
+
+.content-gallery img{
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
+  /* FOOTER */
+
+  .footer{
+   text-align: center;
+   margin: 7vw 15vw 5vw 15vw;
+  }
+
+.footer-flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2vw;
+}
+
+.footer-nav ol{
+   padding: 0;
+}
+
+.footer-nav ol li{
+   display: inline;
+   margin: 0 1vw 0 1vw;
+}
+
+.footer-nav a{
+   color: black;
+}
+
+.footer-flex div{
+   width: 30%;
+ }
+
+.footer-social img{
+   border-radius: 25%;
+   width: 2vw;
+   margin: 0 1vw 0 1vw;
+}
+
+.footer-logo img{
+   width: 12vw;
+}
+
+
 
 
  /* MAIN */
@@ -720,8 +814,14 @@ body{
    h2{
       font-size: 5vw;
    }
-   p,a,h3{
+   p,h3{
       font-size: 3vw;
+      line-height: 3.5vw;
+   }
+
+   a{
+      font-size: 3vw;
+      line-height: 6vw;
    }
 
    .nav{
@@ -819,6 +919,42 @@ body{
    margin-top: 8vw;
    width: 80vw;
    text-align: center;
+}
+
+#contact{
+   height: 100vw;
+}
+
+#contact form input{
+   height: 6vw;
+   width: 50vw;
+}
+
+#contact textarea{
+   height: 15vw;
+   width: 50vw;
+
+   min-width: 20vw;
+   min-height: 3vw;
+   max-width: 50vw;
+   max-height: 30vw;
+}
+
+#contact input[type="submit"]{
+   width: 20vw;
+}
+
+.about-skill{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   align-items: center;
+   gap: 10vw;
+   margin: 5vw 0 5vw 0;
+}
+
+.about-skill div{
+   width: 100%;
 }
 
 .slide-butt :nth-child(2){
@@ -1131,8 +1267,16 @@ body{
    height: inherit;
 }
 
+.footer-social img{
+   width: 5vw;
 }
 
+}
+
+
+
+
+/* Computer */
 @media screen and (min-width: 801px) {
    #phone-main{
       display: none;
@@ -1223,46 +1367,6 @@ body{
 
  }
 
-  /* FOOTER */
-
-  .footer{
-   text-align: center;
-   margin: 7vw 15vw 5vw 15vw;
-  }
-
-.footer-flex{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 2vw;
-}
-
-.footer-nav ol{
-   padding: 0;
-}
-
-.footer-nav ol li{
-   display: inline;
-   margin: 0 1vw 0 1vw;
-}
-
-.footer-nav a{
-   color: black;
-}
-
-.footer-flex div{
-   width: 30%;
- }
-
-.footer-social img{
-   border-radius: 25%;
-   width: 2vw;
-   margin: 0 1vw 0 1vw;
-}
-
-.footer-logo img{
-   width: 12vw;
-}
 
 
 
