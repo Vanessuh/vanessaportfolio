@@ -30,7 +30,6 @@ Graphic design">
         </div>
     </div>
 
-
     <div class="phone-nav">
         <div class="nav-logo">
             <a href="portfolio.html">
@@ -39,115 +38,49 @@ Graphic design">
         </div>
     </div>
 
-    <section id="world-main">
-        <div class="project-header">
-        <div class="world-project-img">
-            <img src="IMG/totheworldlogo.jpg" alt="">
-        </div>
-            <div class="project-about">
+    <section id="portfolio-proj">
+        <div class="portfolio-header">
             <h3>2023</h3>
-            <h2>To The World</h2>
+            <h1>To The World</h1>
             <p>To the world is an indie project based around the design of Pitch Canker’s tarot cards called “The Troubled Tarot”. During this project I assisted in various illustrative graphics for the game including the pause menu. That carried a feeling of dread and fear from the main character.</p>
+        </div>
+
+        <div class="portfolio-content">
+            <h2>Final Design</h2>
+            <div class="content-gallery">
+                <div>
+                <img src="IMG/totheworldfull.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-content">
+            <h2>Sketches</h2>
+            <div class="content-gallery">
+                <div>
+                <img src="IMG/IMG_3460.JPG" alt="">
+                </div>
+                <div>
+                <img src="IMG/IMG_3461.JPG" alt="">
+                </div>
+                <div>
+                <img src="IMG/IMG_3462.JPG" alt="">
+                </div>
             </div>
         </div>
 
-
-
-        <div class="project-gallery">
-            
-            
-            <div class="meow-project-content">
-                <h2>Ideation</h2>
-                <div class="meow-gallery">
-                    <div>
-                        <img src="IMG/IMG_3460.JPG" alt="">
-                    </div>
-                    <div>
-                        <img src="IMG/IMG_3461.JPG" alt="">
-                    </div>
-                    <div>
-                        <img src="IMG/IMG_3462.JPG" alt="">
-                    </div>
-
-                </div>
-                <h3 style="text-align: left;">Sketching</h3>
-                <p style="text-align: left;">Experimenting different ideas and focal points firstly on paper before beginning digital drafts. Planning layout as to how buttons and other text will be displayed on the page. Making notes to reference in the final design. Finally communicating with the team over the favoured design to implement into the project</p>
-                
-                
-            </div>
-                <h2 style="margin-top: 5vw; text-align: center;">Final Concept</h2>
-                <img src="IMG/totheworldfull.jpg" alt="" style="text-align: center; height: 50vw;">
       
     </section>
 
-    <section id="phone-main">
-
-            <div class="project-header">
-        <div class="world-project-img">
-            <img src="IMG/totheworldlogo.jpg" alt="">
-        </div>
-            <div class="project-about">
-            <h3>2023</h3>
-            <h2>To The World</h2>
-            <p>To the world is an indie project based around the design of Pitch Canker’s tarot cards called “The Troubled Tarot”. During this project I assisted in various illustrative graphics for the game including the pause menu. That carried a feeling of dread and fear from the main character.</p>
-            </div>
-        </div>
-
-
-
-        <div class="gallery">
-            <h2>Ideation</h2>
-                <div class="world-slideshow-container">
-
-            <div class="arrow">
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-            </div>
-
-            <div class="phone-img1">
-                <div class="mySlides fade">
-                <img src="IMG/IMG_3460.JPG">
-                </div>
-            </div>
-
-            <div class="phone-img2">
-                <div class="mySlides fade">
-                <img src="IMG/IMG_3461.JPG">
-                </div>
-
-            </div>
-
-            <div class="phone-img3">
-
-                <div class="mySlides fade">
-                <img src="IMG/IMG_3462.JPG">
-                </div>
-            </div>
-
-            <div class="arrow">
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
-
-        </div>
-                        <h3 style="text-align: left;">Sketching</h3>
-                <p style="text-align: left;">Experimenting different ideas and focal points firstly on paper before beginning digital drafts. Planning layout as to how buttons and other text will be displayed on the page. Making notes to reference in the final design. Finally communicating with the team over the favoured design to implement into the project</p>
-                
-                <h2 style="margin-top: 5vw;">Final Concept</h2>
-                <img src="IMG/totheworldfull.jpg" alt="" style="height: 61vw;">
-
-
-
-    </section>
-
+   
 
     <div class="footer">
 
         <div class="footer-flex">
-            <div class="footer-logo">
-                <a href="#header"><img src="IMG/website-logo.png" alt="logo"></a>
-            </div>
 
-            <div>
-                <h2>Vanessa Sedlezky</h2>
+            <div class="footer-logo">
+                <a href="#header"><img src="IMG/logo-vertical-colour.png" alt="logo"></a>
             </div>
 
             <div class="footer-nav">
@@ -158,37 +91,20 @@ Graphic design">
             </ol>
             </div>
 
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/vanessa-sedlezky/" target="_blank">
+                <img src="IMG/linkedin.png" alt="">
+                </a>
+                <img src="IMG/instagram.png" alt="">
+            </div>
+
         </div>
+
+        <hr>
         
         <p>Copyright © Vanessa Sedlezky</p>
        
     </div>
-
-     <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-
-</script>
 
 
 
