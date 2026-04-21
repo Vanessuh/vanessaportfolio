@@ -11,8 +11,8 @@ button,a{
 p,li{
        font-family: 'Comfortaa';
        text-decoration: none;
-       font-size: 0.75vw;
-       line-height: 1vw;
+       font-size: 1vw;
+       line-height: 1.5vw;
 }
 
 a,button{
@@ -756,7 +756,6 @@ body{
 .content-gallery{
    display: flex;
    width: 100%;
-   
 }
 
 .content-gallery div{
