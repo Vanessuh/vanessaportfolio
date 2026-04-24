@@ -162,7 +162,15 @@ body{
  #hero .hero-btn{
    width: 12vw;
    margin: auto;
+   background-color: #00000082 ;
+  box-shadow: 0 5px #00000082;
+  border-radius: 12px;
  }
+
+  .hero-btn:active {
+  box-shadow: 0 5px #00000082;
+  transform: translateY(4px);
+}
 
  #hero button{
     color: #C71F02;
@@ -270,6 +278,9 @@ body{
     height: 20vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
  }
 
  .portfolio-character div:hover{
@@ -282,6 +293,16 @@ body{
     width: inherit;
     height: inherit;
     border-radius: 8px;
+    margin: auto;
+ }
+
+ .portfolio-content .web-mock img{
+   transition: 300ms;
+ }
+
+ .portfolio-content .web-mock img:hover{
+   transform: scale(1.05);
+   transition: 300ms;
  }
 
  .filter{
@@ -773,6 +794,65 @@ body{
    height: 100%;
 }
 
+.content-gallery2{
+   display: flex;
+}
+
+.content-gallery2 div{
+   width: 100%;
+}
+
+.content-gallery2 .web-mock{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content-gallery2 img{
+   width: 75%;
+}
+
+.content-gallery2 .view-btn{
+   border: 0;
+   border-radius: 26px;
+   width: 14vw;
+   height: 3vw;
+   margin-top: 2vw;
+   transition: 300ms;
+}
+
+.content-gallery2 .view-btn:hover{
+   background-color: #B34134;
+   color: white;
+   transition: 300ms;
+
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 
 
   /* FOOTER */
@@ -984,8 +1064,12 @@ body{
    font-size: 5vw;
 }
 
+#myNav-bg{
+   width: 0%;
+   height: 100%;
+}
 
-   .overlay {
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -1040,7 +1124,7 @@ body{
 }
 
  #hero .hero-btn{
-   margin-top: 5vw;
+   margin-top: 7vw;
    width: auto;
  }
 
@@ -1154,6 +1238,15 @@ body{
     width: inherit;
     height: auto;
     border-radius: 8px;
+ }
+
+ .content-gallery2{
+   flex-direction: column;
+ }
+
+ .content-gallery2 .view-btn{
+   width: 30vw;
+   height: 4vw;
  }
 
  /* PORTFOLIO */
