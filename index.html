@@ -20,7 +20,7 @@ Graphic design">
 
 </head>
 
-<body>
+<body id="body">
 
     <div class="nav">
         <div class="nav-logo">
@@ -39,6 +39,7 @@ Graphic design">
     </div>
 
     <div class="phone-nav">
+        <div id="myNav-bg">
         <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -47,6 +48,8 @@ Graphic design">
             <a href="about.html">About</a>
         </div>
         </div>
+        </div>
+
 
         
          <span style="font-size:40px;cursor:pointer;margin: 4vw;" onclick="openNav()">&#9776;</span>
@@ -226,10 +229,13 @@ function showSlides(n) {
 
 function openNav() {
   document.getElementById("myNav").style.width = "50%";
+  document.getElementById("myNav-bg").style.width = "100%";
+  document.getElementById("myNav-bg").style.backgroundColor = " rgba(0, 0, 0, 0.082)";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+  document.getElementById("myNav-bg").style.width = "0%";
 }
 </script>
 
