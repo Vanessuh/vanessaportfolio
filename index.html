@@ -6,6 +6,7 @@
 <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=BBH Hegarty' rel='stylesheet'>
 <link rel="icon" type="image/x-icon" href="IMG/website-logo.png">
 <meta name="description" content="Vanessa Sedlezky's Porftolio Website">
 <meta name="keywords" content="Vanessa
@@ -17,26 +18,10 @@ Graphic design">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
-
 </head>
 
 <body id="body">
 
-    <div class="nav">
-        <div class="nav-logo">
-            <img src="IMG/website-logo.png" alt="logo">
-        </div>
-
-        <div class="nav-buttons">
-            <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>  
-            </ol>
-
-        </div>
-
-    </div>
 
     <div class="phone-nav">
         <div id="myNav-bg">
@@ -57,17 +42,104 @@ Graphic design">
 
     </div>
 
-    <section id="hero">
-            <h1>Welcome To My Portfolio</h1>
-            <div class="hero-btn">
-
-            <a href="portfolio.html"><button>View My Work</button></a>    
+    <div class="hero">
+            <div class="hero-title">
+            <h3>Welcome to my Portfolio</h3>
+            <h1>VANESSA SEDLEZKY</h1>
+            </div>
+     
+            <div class="folder" id="folder">
+                <div>
+                <img src="IMG/folder.png" alt="">
+                <p style="margin: 0;">Portfolio</p>
+                </div>
+                <div>
+                <img src="IMG/folder.png" alt="">
+                <p style="margin-top: 0;">About</p>
+                </div>
+                <div>
+                <a href="IMG/Vanessa-Sedlezky-Resume.pdf" target="_blank">
+                <img src="IMG/folder.png" alt="">
+                <p style="margin-top: 0;">Resume</p>
+                </a>
+                </div>
             </div>
 
-        <div class="headerImage">
-            <img src="IMG/logo.jpg" alt="">
-        
+    </div>
+
+    
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="IMG/website-logo.png" alt="logo">
         </div>
+
+        <div class="nav-buttons">
+            <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>  
+            </ol>
+
+        </div>
+
+    </div>
+
+    <div class="sliding-elmnt">
+        <div>
+        <h3>Interactive Elements</h3>
+        <h3>Collaborative Work</h3>
+        <h3>Discover My Favourite Projects</h3>
+        </div>
+    </div>
+
+    <section id="hero">
+        <img src="IMG/flor-bg.jpg" alt="">
+            <div class="sticky-note" id="sticky-note1" style="top: 18%; right: 10%; width: 22vw; height: 28vw;">
+                <div class="sticky-noteheader" id="sticky-noteheader" >
+                    <div class="note-btn">
+                        <div style="background-color: red;"></div>
+                        <div style="background-color: orange;"></div>
+                        <div style="background-color: green;"></div>
+                    </div>
+                <p>Character Design</p>
+                </div>
+                
+            <a href="" target="_blank" style="width: auto; height: auto;">
+                <div style="background-color: blue; width: 5vw; height: 5vw;"></div>
+            </a>
+            </div>
+            
+            <div class="sticky-note" id="sticky-note2" style="top: 18%; left: 36%; width: 28vw; height: 22vw;">
+                <div class="sticky-noteheader" id="sticky-noteheader" >
+                    <div class="note-btn">
+                        <div style="background-color: red;"></div>
+                        <div style="background-color: orange;"></div>
+                        <div style="background-color: green;"></div>
+                    </div>
+                <p>Web Design</p>
+                </div>
+            <a href="portfolio.html#motion" style="width: auto; height: auto;">
+                <div>
+                    <img src="IMG/SEDUIRE/web--mockup.jpg" alt="" style="width: 100%; height: auto; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+                </div>
+            </a>
+            </div>
+            
+            <div class="sticky-note" id="sticky-note3" style="top: 18%; left: 10%; width: 22vw; height: 28vw;">
+                <div class="sticky-noteheader" id="sticky-noteheader" >
+                    <div class="note-btn">
+                        <div style="background-color: red;"></div>
+                        <div style="background-color: orange;"></div>
+                        <div style="background-color: green;"></div>
+                    </div>
+                <p>Web Design</p>
+                </div>
+            <a href="" target="_blank" style="width: auto; height: auto;">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </a>
+            </div>
     </section>
 
     <section id="home-main">
@@ -203,9 +275,14 @@ Graphic design">
        
     </div>
 
-    <script>
+<script>
 let slideIndex = 1;
 showSlides(slideIndex);
+
+dragElement(document.getElementById("sticky-note1"));
+dragElement(document.getElementById("sticky-note2"));
+dragElement(document.getElementById("sticky-note3"));
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -236,6 +313,48 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("myNav-bg").style.width = "0%";
+}
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } 
+  else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
 }
 </script>
 
