@@ -45,19 +45,21 @@ body{
 /* NAV */
 .nav{
     height: 5vw;
-    background-color: #ffffff;
-    top: 0;
+    background-color:#C71F02;
+    box-shadow: rgba(0, 0, 0, 0.39) 0 1px 8px 1px;
     z-index: 1000;
     position: sticky;
+    top: 0;
 }
 
 .nav-logo{
     float: left;
     padding-left: 5vw;
+    height: inherit;
 }
 
 .nav-logo img{
-    height: 5vw;
+    height: inherit;
     width: auto;
 
 }
@@ -81,13 +83,13 @@ body{
 .nav ol li a{
 /* We could change the actual text in the links if wanted */
     transition: .3s all ease;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1vw;
  }
 
 .nav ol li a:hover{
-    color:#C71F02;
+    color:black;
  }
 
  /* HOME NAV */
@@ -143,9 +145,16 @@ body{
  /* HERO */
 
  #hero{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 45vw;
     background-color: #C71F02;
+    position: relative;
+    overflow: hidden;
+ }
+
+ #hero img{
+   width: 100%;
+   height: auto;
  }
 
  #hero h1{
@@ -211,6 +220,121 @@ body{
     width: auto;
  }
 
+ .hero{
+   width: 100%;
+   height: 30.2vw;
+   position: relative;
+ }
+
+ .hero-title{
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   margin-top: 19vw;
+ }
+
+ .hero-title h1{
+   color:#C71F02;
+   font-size: 5em;
+   font-family: BBH Hegarty;
+   margin: 1vw;
+ }
+
+ .sticky-note{
+   position: absolute;
+   background-color: rgb(196, 196, 196);
+   box-shadow: 1px 1px 6px 2px #00000036;
+   border-radius: 8px;
+ }
+
+ .sticky-note:hover{
+   transform: scale(1.025);
+   cursor: pointer;
+ }
+
+ .sticky-note p{
+   color: black;
+   margin: 0;
+ }
+
+ .sticky-noteheader{
+   background-color: rgb(255, 255, 255);
+   height: 1vw;
+   padding: 1vw;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   display: flex;
+   align-items: center;
+   gap: 1vw;
+ }
+
+ .note-btn{
+   display: flex;
+   gap: 0.5vw;
+ }
+
+ .note-btn div{
+   border-radius: 100%;
+   background-color: #C71F02;
+   width: 0.5vw;
+   height: 0.5vw;
+ }
+
+ .folder{
+   position: absolute;
+   display: flex;
+   gap: 3vw;
+   bottom: 30%;
+   left: 0;
+   width: 100%;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .folder div:hover{
+   transform: scale(1.05);
+   transition: 300ms;
+ }
+
+ .folder div{
+   transition: 300ms;
+ }
+
+ .folder img{
+   
+   width: 5vw;
+   height: 5vw;
+ }
+
+ .sliding-elmnt{
+   background-color: black;
+   margin: 0;
+   width: 100%;
+   height: 3.5vw;
+   overflow: hidden;
+ }
+
+ .sliding-elmnt div{
+   display: flex;
+   animation-duration: 15s;
+   animation-name: sliding;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   height: inherit;
+   align-items: center;
+   justify-content: space-between;
+   transform: translateX(-100%);
+ }
+
+ .sliding-elmnt h3{
+   color: white;
+   margin: 0;
+ }
+
+ @keyframes sliding{
+   100% {transform:translateX(100%);}
+ }
+
 
  #main{
     margin: 0 15vw 0 15vw;
@@ -222,6 +346,7 @@ body{
  .introduction{
     width: auto;
     height: auto;
+    margin-top: 2vw;
  }
 
  .gallery h2{
@@ -345,43 +470,9 @@ body{
    height: 35vw;
 }
 
-.coco-project-img{
-   display: flex;
-   justify-content: center;
-}
-
-.coco-project-img img{
-   width: 20vw;
-   height: auto;
-}
-
 .project-about{
    position: absolute;
    bottom: 0;
-}
-
-.coco-project-content{
-   margin: 8vw 0 5vw 0;
-   text-align: center;
-   width: auto;
-}
-
-.coco-project-content div{
-   width: inherit;
-   margin: auto;
-}
-
-.coco-project-content img{
-   width: 60vw;
-   height: auto;
-}
-
-.coco-project-content h2,h3{
-   margin: 0;
-}
-
-.coco-project-content h2{
-   margin-top: 5vw;
 }
 
 /* COCO PAGE */
@@ -411,120 +502,6 @@ body{
    width: 25vw;
 }
  
-/* MEOWLLOWEEN */
-
-.meow-project-img{
-   display: flex;
-   justify-content: center;
-}
-
-.meow-project-img img{
-   width: 15vw;
-   height: auto;
-}
-
-.meow-project-content{
-   margin-top: 15vw;
-   text-align: center;
-}
-
-.meow-gallery{
-   margin: 0 0 5vw 0;
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-}
-
-.meow-gallery div{
-   width: 18vw;
-   margin: auto;
-   justify-content: center;
-}
-
-.meow-gallery img{
-   width: inherit;
-}
- 
-.meow-gallery2{
-   margin: 0 0 5vw 0;
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-   text-align: left;
-}
-
-.meow-gallery2 div{
-   width: 29vw;
-   margin: auto;
-   justify-content: center;
-}
-
-.meow-gallery2 img{
-   width: inherit;
-}
-
-.meow-gallery3{
-   margin: 0 0 5vw 0;
-   text-align: center;
-}
-
-.meow-gallery3 div{
-   width: auto;
-   margin: auto;
-   justify-content: center;
-}
-
-.meow-gallery3 img{
-   width: 35vw;
-}
-
-.meow-gallery4{
-   margin: 0 0 5vw 0;
-   text-align: center;
-   display: flex;
-   justify-content: space-between;
-   width: 50vw;
-}
-
-.meow-gallery4 div{
-   width: auto;
-   margin: auto;
-   justify-content: center;
-}
-
-.meow-gallery4 img{
-   height: 35vw;
-   width: auto;
-}
-
-.meow-subcat{
-   display: flex;
-   justify-content: space-between;
-   text-align: left;
-}
-
-.meow-subcat div{
-   width: 25vw;
-}
-
-.meow-subcat img{
-   width: inherit;
-}
-
-/* TO THE WORLD */
- #world-main{
-    margin: 0 15vw 0 15vw;
- }
-
-.world-project-img{
-   display: flex;
-   justify-content: center;
-}
-
-.world-project-img img{
-   width: 20vw;
-   height: auto;
-}
 .project-content{
    margin: 5vw 0 5vw 0;
    display: flex;
@@ -538,36 +515,6 @@ body{
 
 .project-content img{
    width: 40vw;
-}
-
-.meow-gallery{
-   margin: 0 0 5vw 0;
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-}
-
-/* NUCHEESECAKE */
-
-.cheese-project-about{
-   position: absolute;
-   top: 12vw;
-   width: 70vw;
-}
-
-
-.cheese-gallery div{
-   width: 35vw;
-   margin: 2vw auto auto auto;
-   justify-content: center;
-}
-
-.cheese-gallery img{
-   width: inherit;
-}
-
-.nucheeselogo img{
-   width: 25vw;
 }
 
 /* ABOUT */
@@ -755,7 +702,7 @@ body{
 }
 
 #portfolio-proj{
-   margin: 5vw 15vw 5vw 15vw;
+   margin: 5vw 20vw 5vw 20vw;
 }
 
 .portfolio-header{
@@ -826,6 +773,18 @@ body{
    color: white;
    transition: 300ms;
 
+}
+
+.colour-gallery{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.colour-gallery div{
+   border-radius: 25%;
+   height: 10vw;
+   width: 10vw;
 }
 
 .accordion {
@@ -899,10 +858,10 @@ body{
 
 
 
- /* MAIN */
  /* PHONE SCREEN */
 
 @media screen and (max-width: 800px) {
+
    #character, #motion, #logo{
    scroll-margin-top: 15vw;
 }
@@ -934,6 +893,27 @@ body{
   z-index: 10000;
       height: 0;
    }
+
+/*-------HOME--------*/
+.hero{
+   height: 50vw;
+}
+
+.hero h1{
+   line-height: 11vw;
+}
+
+.folder{
+   bottom: 0;
+}
+
+.sliding-elmnt h3{
+   font-size: 0.5em;
+}
+
+.sticky-note p{
+   font-size: 0.4em;
+}
 
 #about-hero{
    height: 130vw;
@@ -1010,7 +990,12 @@ body{
 
 #contact form input{
    height: 6vw;
-   width: 50vw;
+   width: 65vw;
+}
+
+#contact form textarea{
+   width: 65vw;
+   max-width: 65vw;
 }
 
 #contact textarea{
@@ -1105,63 +1090,6 @@ body{
    padding: 5vw;
   font-size: 60px;
 }
-
-#hero{
-    width: auto;
-    height: 95vw;
-    background-color: #C71F02;
-   text-align: center;
-   position: relative;
-   padding-top: 25vw;
- }
-
-#hero h1{
-   width: 75vw;
-   padding: 0;
-   line-height: 12vw;
-   font-size: 12vw;
-   margin: auto;
-}
-
- #hero .hero-btn{
-   margin-top: 7vw;
-   width: auto;
- }
-
- #hero .hero-btn button{
-    color: #C71F02;
-    background-color: white;
-    border-radius: 12px;
-    border: 0;
-    width: 50vw;
-    height: 6vw;
-    font-size: 1.25em;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-
- #hero .headerImage{
-    width: 75vw;
-    height: 16vh;
-    background-color: #E1E075;
-    margin:auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-width: 6px 6px 0 6px;
-    border-color: white;
-    border-style: solid;
-    position: absolute;
-    bottom: 0;
-    left: 11%;
- }
-
- #hero .headerImage img{
-    height: inherit;
-    width: auto;
- }
-
 
 
   #home-main{
