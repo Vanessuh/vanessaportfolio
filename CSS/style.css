@@ -950,7 +950,7 @@ body{
 
  #sticky-note1{
    width: 29vw;
-   height: 10vw;
+   height: 35vw;
    top: 18%;
    left: 2%;
 
@@ -972,7 +972,7 @@ body{
 }
 
 .sticky-note .sticky-noteheader p{
-   font-size: 0.1em;
+   font-size: 0.75vw;
 }
 
 #about-hero{
