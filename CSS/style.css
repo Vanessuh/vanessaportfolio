@@ -153,8 +153,8 @@ body{
  }
 
  #hero img{
-   width: 100%;
-   height: auto;
+   width: auto;
+   height: 100%;
  }
 
  #hero h1{
@@ -166,6 +166,7 @@ body{
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    line-height: 5em;
  }
 
  #hero .hero-btn{
@@ -215,22 +216,22 @@ body{
     border-style: solid;
  }
 
- #hero .headerImage img{
-    height: inherit;
-    width: auto;
+ #hero img{
+    height: auto;
+    width: inherit;
  }
 
  .hero{
    width: 100%;
    height: 30.2vw;
-   position: relative;
  }
 
  .hero-title{
    width: 100%;
-   height: 100%;
+   height: auto;
    text-align: center;
    margin-top: 19vw;
+   position: relative;
  }
 
  .hero-title h1{
@@ -238,6 +239,7 @@ body{
    font-size: 5em;
    font-family: BBH Hegarty;
    margin: 1vw;
+   line-height: 8vw;
  }
 
  .sticky-note{
@@ -246,6 +248,29 @@ body{
    box-shadow: 1px 1px 6px 2px #00000036;
    border-radius: 8px;
  }
+
+ #sticky-note1{
+   width: 22vw;
+   height: 28vw;
+   top: 18%;
+   left: 10%;
+
+}
+
+#sticky-note2{
+
+    height: 22vw;
+    width: 28vw;
+   top: 18%;
+   left: 35%;
+}
+
+#sticky-note3{
+   width: 22vw;
+   height: 28vw;
+   top: 18%;
+   right: 10%;
+}
 
  .sticky-note:hover{
    transform: scale(1.025);
@@ -284,8 +309,7 @@ body{
    position: absolute;
    display: flex;
    gap: 3vw;
-   bottom: 30%;
-   left: 0;
+   bottom: -10vw;
    width: 100%;
    justify-content: center;
    text-align: center;
@@ -880,7 +904,6 @@ body{
 
    a{
       font-size: 3vw;
-      line-height: 6vw;
    }
 
    .nav{
@@ -905,11 +928,43 @@ body{
 }
 
 .folder{
-   bottom: 0;
+   bottom: -17vw;
 }
 
 .sliding-elmnt h3{
    font-size: 0.5em;
+}
+
+#hero{
+   height: 65vw;
+}
+
+#hero img{
+   height: 100%;
+   width: auto;
+}
+
+ #sticky-note1{
+   width: 29vw;
+   height: 35vw;
+   top: 18%;
+   left: 2%;
+
+}
+
+#sticky-note2{
+
+   height: 30vw;
+   width: 34vw;
+   top: 18%;
+   left: 33%;
+}
+
+#sticky-note3{
+   width: 29vw;
+   height: 35vw;
+   top: 18%;
+   right: 2%;
 }
 
 .sticky-note p{
