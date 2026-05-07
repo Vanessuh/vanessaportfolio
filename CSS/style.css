@@ -120,28 +120,7 @@ body{
     width: auto;
 }
 
-.home-nav ol{
-    margin: 2.15vw;
-    padding: 0;
-}
-
-.home-nav ol li{
-    display: inline;
-    margin-right: 2.5vw;
-}
-
-.home-nav ol li a{
-/* We could change the actual text in the links if wanted */
-    transition: .3s all ease;
-    color: black;
-    text-decoration: none;
-    font-size: 1vw;
- }
-
-.home-nav ol li a:hover{
-    color:#C71F02;
- }
-
+/*----HOME-------*/
  /* HERO */
 
  #hero{
@@ -359,11 +338,6 @@ body{
    100% {transform:translateX(100%);}
  }
 
-
- #main{
-    margin: 0 15vw 0 15vw;
- }
-
  .introduction h3, p{
     color: #6e6e6e;
  }
@@ -398,6 +372,7 @@ body{
     border-radius: 8px;
  }
 
+ /*------PORTFOLIO---------*/
  #portfolio-hero{
   box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
  }
@@ -440,7 +415,7 @@ body{
 
 .portfolio-character img{
     width: inherit;
-    height: inherit;
+    height: auto;
     border-radius: 8px;
     margin: auto;
  }
@@ -489,56 +464,119 @@ body{
    scroll-margin-top: 10vw;
 }
 
-.project-header{
+#main{
+   margin:5vw 15vw 5vw 15vw
+}
+
+#portfolio-proj{
+   margin: 5vw 20vw 5vw 20vw;
+}
+
+.portfolio-header{
+   padding-top: 5vw;
    position: relative;
-   height: 35vw;
 }
 
-.project-about{
-   position: absolute;
-   bottom: 0;
+.portfolio-header img{
+   display: block;
+   margin: auto;
+   width: 25%;
+   height: 25%;
 }
 
-/* COCO PAGE */
+.portfolio-content{
+   margin-top: 10vw;
+}
 
-.project-img{
+.content-gallery{
    display: flex;
+   width: 100%;
+}
+
+.content-gallery div{
+   width: 0;
+   flex-grow: 1;
    justify-content: center;
 }
 
-.project-img img{
-   width: 30vw;
-   height: auto;
+.content-gallery img{
+   width: 100%;
+   height: 100%;
 }
 
-.project-content{
-   margin: 5vw 0 5vw 0;
+.content-gallery video{
+   height: 100%;
+}
+
+.content-gallery2{
+   display: flex;
+}
+
+.content-gallery2 div{
+   width: 100%;
+}
+
+.content-gallery2 .web-mock{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content-gallery2 img{
+   width: 75%;
+}
+
+.content-gallery2 .view-btn{
+   border: 0;
+   border-radius: 26px;
+   width: 14vw;
+   height: 3vw;
+   margin-top: 2vw;
+   transition: 300ms;
+}
+
+.content-gallery2 .view-btn:hover{
+   background-color: #B34134;
+   color: white;
+   transition: 300ms;
+
+}
+
+.colour-gallery{
    display: flex;
    justify-content: space-between;
+   width: 100%;
 }
 
-.project-content div{
-   width: 25vw;
-   margin: auto;
+.colour-gallery div{
+   border-radius: 25%;
+   height: 10vw;
+   width: 10vw;
 }
 
-.project-content img{
-   width: 25vw;
-}
- 
-.project-content{
-   margin: 5vw 0 5vw 0;
-   display: flex;
-   justify-content: space-between;
-}
-
-.project-content div{
-   width: auto;
-   margin: auto;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-.project-content img{
-   width: 40vw;
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* ABOUT */
@@ -725,119 +763,6 @@ body{
    font-size: 3vw;
 }
 
-#portfolio-proj{
-   margin: 5vw 20vw 5vw 20vw;
-}
-
-.portfolio-header{
-   padding-top: 5vw;
-   position: relative;
-}
-
-.portfolio-header img{
-   display: block;
-   margin: auto;
-   width: 25%;
-   height: 25%;
-}
-
-.portfolio-content{
-   margin-top: 10vw;
-}
-
-.content-gallery{
-   display: flex;
-   width: 100%;
-}
-
-.content-gallery div{
-   width: 0;
-   flex-grow: 1;
-   justify-content: center;
-}
-
-.content-gallery img{
-   width: 100%;
-   height: 100%;
-}
-
-.content-gallery video{
-   height: 100%;
-}
-
-.content-gallery2{
-   display: flex;
-}
-
-.content-gallery2 div{
-   width: 100%;
-}
-
-.content-gallery2 .web-mock{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.content-gallery2 img{
-   width: 75%;
-}
-
-.content-gallery2 .view-btn{
-   border: 0;
-   border-radius: 26px;
-   width: 14vw;
-   height: 3vw;
-   margin-top: 2vw;
-   transition: 300ms;
-}
-
-.content-gallery2 .view-btn:hover{
-   background-color: #B34134;
-   color: white;
-   transition: 300ms;
-
-}
-
-.colour-gallery{
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-}
-
-.colour-gallery div{
-   border-radius: 25%;
-   height: 10vw;
-   width: 10vw;
-}
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-
-
   /* FOOTER */
 
   .footer{
@@ -878,9 +803,6 @@ body{
 .footer-logo img{
    width: 12vw;
 }
-
-
-
 
  /* PHONE SCREEN */
 
@@ -1360,88 +1282,4 @@ body{
    .phone-nav{
       display: none;
    }
-
-   #home-main{
-    margin: 0 15vw 0 15vw;
- }
-
- .introduction h3, p{
-    color: #6e6e6e;
- }
- .introduction{
-    width: auto;
-    height: auto;
- }
-
- .gallery h2{
-    text-align: center;
- }
-
- .collection1 h2{
-    text-align: center;
- }
-
- .collection1{
-    display: flex;
-
- }
-
- .collection1 div{
-    width: 20vw;
-    height: auto;
-    margin: auto;
- }
-
- .collection1 img{
-    width: inherit;
-    height: auto;
-    border-radius: 8px;
- }
-
- #portfolio-hero{
-  box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
- }
-
-#portfolio-hero h1{
-    width: 700px;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color:#C71F02;
-    text-align: center;
-    display: block;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
- }
-
-.portfolio-character{
-   gap: 3vw;
-    display: flex;
-
- }
-
-.portfolio-character div{
-    width: 20vw;
-    height: 20vw;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
-    border-radius: 8px;
- }
-
- .portfolio-character div:hover{
-   scale: 0.95;
-   opacity: 90%;
-   transition: 300ms;
- }
-
-.portfolio-character img{
-    width: inherit;
-    height: auto;
-    border-radius: 8px;
- }
- 
-
- }
-
-
-
-
+}
