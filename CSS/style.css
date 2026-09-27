@@ -223,7 +223,7 @@ body{
 
  .sticky-note{
    position: absolute;
-   background-color: rgb(196, 196, 196);
+   background-color: white;
    box-shadow: 1px 1px 6px 2px #00000036;
    border-radius: 8px;
  }
@@ -464,7 +464,7 @@ body{
 
 }
 
-#character, #motion, #logo{
+#character, #motion, #logo, #user{
    scroll-margin-top: 10vw;
 }
 
@@ -477,19 +477,13 @@ body{
 }
 
 .portfolio-header{
-   padding-top: 5vw;
+   padding-top: 5%;
    position: relative;
-}
-
-.portfolio-header img{
-   display: block;
-   margin: auto;
-   width: 25%;
-   height: 25%;
+   display: flex;
 }
 
 .portfolio-content{
-   margin-top: 10vw;
+   margin-top: 8vw;
 }
 
 .content-gallery{
@@ -540,7 +534,7 @@ body{
 }
 
 .content-gallery2 .view-btn:hover{
-   background-color: #B34134;
+   background-color: #7ACAF2;
    color: white;
    transition: 300ms;
 
@@ -576,11 +570,11 @@ body{
 }
 
 .panel {
-  padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  flex-wrap: wrap;
 }
 
 /* ABOUT */
@@ -1169,6 +1163,23 @@ body{
    width: 90vw;
    top: 5vw;
  }
+
+ .filter p{
+   font-size: 0.75em;
+ }
+
+ .portfolio-header {
+   flex-direction: column;
+   gap: 3vw;
+ }
+
+ .portfolio-header img{
+   display: none;
+
+ }
+
+
+
 
  #portfolio-hero{
   box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
